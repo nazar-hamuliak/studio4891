@@ -1,0 +1,30 @@
+<ion-header data-comp-id="header.1">
+    <ion-navbar color="contrast" data-comp-id="navbar.1" style="">
+        <button data-comp-id="button.1" icon-only="" ion-button="" menuToggle="">
+            <ion-icon class="ion-ios-menu"></ion-icon>
+        </button>
+        <ion-title data-comp-id="title.1">
+            <span data-comp-id="text.1" ion-text="">Take Photo</span>
+        </ion-title>
+        <ion-buttons data-comp-id="buttons.1" right=""></ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-light" data-comp-id="content.1" style="">
+    <div (fileReady)="onReady()" [(ngModel)]="data.file" data-comp-id="take-photo.1"
+        take-photo="">
+        <ion-item>
+            <ion-thumbnail item-right="">
+                <img #thumbnail="">
+            </ion-thumbnail>
+            <ion-label>
+                <span class="label">Take Photo</span>
+                <input #file="" accept="image/*" capture="camera" class="fallback-input"
+                    type="file">
+            </ion-label>
+            <ion-icon color="primary" item-end="" name="camera" style=""></ion-icon>
+        </ion-item>
+        <camera-canvas></camera-canvas>
+    </div>
+    <img *ngIf="data.fileData" [src]="data.fileData" data-comp-id="img.1"
+        style="width: calc(100% - 20px); margin: 10px;">
+</ion-content>

@@ -1,0 +1,28 @@
+{
+  "id": "__BASE__",
+  "name": "studio4891",
+  "screens": [
+    {
+      "id": "loading",
+      "name": "Loading",
+      "sourceScreenId": "loading",
+      "sourceAppId": "TakePhoto"
+    },
+    {
+      "id": "takephoto",
+      "name": "Take Photo",
+      "sourceScreenId": "takephoto",
+      "sourceAppId": "TakePhoto"
+    },
+    {
+      "id": "readme",
+      "name": "Readme",
+      "sourceScreenId": "readme",
+      "sourceAppId": "TakePhoto"
+    }
+  ],
+  "startScreen": "takephoto",
+  "statusbarContent": "dark",
+  "statusbarHidden": false,
+  "statusbarBackground": null
+}

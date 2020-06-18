@@ -1,0 +1,7 @@
+{
+  "name": "Take Photo",
+  "short_name": "Take Photo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": []
+}

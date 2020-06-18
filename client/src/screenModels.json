@@ -1,0 +1,44 @@
+{
+  "menu": {
+    "type": "object",
+    "properties": {},
+    "id": "menu"
+  },
+  "readme": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {},
+    "id": "readme"
+  },
+  "loading": {
+    "type": "object",
+    "comment": "Login",
+    "properties": {
+      "login": {
+        "type": "action",
+        "parameters": {
+          "username": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "id": "loading"
+  },
+  "takephoto": {
+    "type": "object",
+    "comment": "Blank",
+    "properties": {
+      "file": {
+        "type": "file"
+      },
+      "fileData": {
+        "type": "string"
+      }
+    },
+    "id": "takephoto"
+  }
+}
